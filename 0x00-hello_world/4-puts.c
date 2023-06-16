@@ -1,9 +1,13 @@
 #include <stdio.h>
 
+/**
+* main - Entry point
+*
+* Return: Always 1 (Success)
+*/
+
 int main(void)
 {
-	char prog="Programming is like building a multilingual puzzle";
-
-	puts(prog);
+	puts("\"Programming is like building a multilingual puzzle");
 	return(0);
 }
