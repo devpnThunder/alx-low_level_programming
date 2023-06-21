@@ -16,7 +16,7 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		if (i == (n - 1))
+		if (i == 49)
 		{
 			printf("%d", c);
 		}
