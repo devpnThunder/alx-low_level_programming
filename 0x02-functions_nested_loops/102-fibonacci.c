@@ -16,7 +16,14 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		printf("%d, ", c);
+		if (i == (n - 1)
+		{
+			printf("%d", c);
+		}
+		else
+		{
+			printf("%d, ", c);
+		}
 	}
 	return (0);
 }
