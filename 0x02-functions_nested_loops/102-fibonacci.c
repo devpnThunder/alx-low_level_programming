@@ -14,8 +14,8 @@ int main(void)
 	for (i = 2; i < n; i++)
 	{
 		c = a + b;
-		b = a;
-		a = c;
+		a = b;
+		b = c;
 		printf("%d, ", c);
 	}
 	return (0);
