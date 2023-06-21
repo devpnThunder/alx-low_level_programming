@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-	int n = 49;
+	int n = 50;
 	int a = 1, b = 2, c, i;
 
 	printf("%d, %d", a, b);
