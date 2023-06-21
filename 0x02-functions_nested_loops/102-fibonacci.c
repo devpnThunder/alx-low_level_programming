@@ -11,7 +11,7 @@ int main(void)
 	int a = 1, b = 2, c, i;
 
 	printf("%d, %d", a, b);
-	for (i = 1; i < n; i++)
+	for (i = 2; i < n; i++)
 	{
 		c = a + b;
 		printf(", %d", c);
