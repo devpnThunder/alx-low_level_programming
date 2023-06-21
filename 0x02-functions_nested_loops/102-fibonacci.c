@@ -8,14 +8,14 @@
 int main(void)
 {
 	int n = 50;
-	int a = 1, b = 2, c;
+	int a = 1, b = 2, c, i;
 
 	printf("%d, %d", a, b);
-	for (int i = 2; i < n; i++)
+	for (i = 2; i < n; i++)
 	{
 		c = a + b;
-		a = b;
-		b = c;
+		b = a;
+		a = c;
 		printf("%d, ", c);
 	}
 	return (0);
