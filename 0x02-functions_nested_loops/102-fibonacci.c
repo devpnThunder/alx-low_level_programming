@@ -7,11 +7,11 @@
 */
 int main(void)
 {
-	int n = 49;
+	int n = 48;
 	int a = 1, b = 2, c, i;
 
 	printf("%d, %d", a, b);
-	for (i = 1; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		c = a + b;
 		printf(", %d", c);
