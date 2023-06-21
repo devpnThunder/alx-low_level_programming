@@ -16,7 +16,7 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		if (i == (n - 1)
+		if (i == (n - 1))
 		{
 			printf("%d", c);
 		}
