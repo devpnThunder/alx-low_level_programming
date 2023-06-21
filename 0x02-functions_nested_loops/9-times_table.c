@@ -16,7 +16,14 @@ void times_table(void)
 			m = a * b;
 			if (b != 9)
 			{
-				printf("%d, ", m);
+				if (m < 10)
+				{
+					printf("%d,  ", m);
+				}
+				else
+				{
+					printf("%d, ", m);
+				}
 			}
 			else
 			{
