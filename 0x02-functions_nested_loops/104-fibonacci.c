@@ -34,7 +34,7 @@ int main(void)
 				j = 0;
 			}
 			f2 = (n1 + n2);
-			f =  a+ b + (f2 / 1000000000);
+			f =  a + b + (f2 / 1000000000);
 			printf(", %ld", f);
 			printf("%ld", f2 % 1000000000);
 			a = b;
