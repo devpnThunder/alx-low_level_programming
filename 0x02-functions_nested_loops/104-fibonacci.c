@@ -7,43 +7,43 @@
 */
 int main(void)
 {
-	int c, i, j;
-	long int a, b, f, f2, n1, n2;
+	int c, boolean, boolean2;
+	long int n1, n2, fn, fn2, n11, n22;
 
-	a = 1;
-	b = 2;
-	i =  j = 1;
-	printf("%ld, %ld", a, b);
+	n1 = 1;
+	n2 = 2;
+	boolean =  boolean2 = 1;
+	printf("%ld, %ld", n1, n2);
 	for (c = 0; c < 96; c++)
 	{
-		if (i)
+		if (boolean)
 		{
-			f = a + b;
-			printf(", %ld", f);
-			a = b;
-			b = f;
+			fn = n1 + n2;
+			printf(", %ld", fn);
+			n1 = n2;
+			n2 = fn;
 		}
 		else
 		{
-			if (j)
+			if (boolean2)
 			{
-				n1 = a % 1000000000;
-				n2 = b % 1000000000;
-				n1 = a / 1000000000;
-				n2 = b / 1000000000;
-				j = 0;
+				n11 = n1 % 1000000000;
+				n22 = n2 % 1000000000;
+				n1 = n1 / 1000000000;
+				n2 = n2 / 1000000000;
+				boolean2 = 0;
 			}
-			f2 = (n1 + n2);
-			f =  a + b + (f2 / 1000000000);
-			printf(", %ld", f);
-			printf("%ld", f2 % 1000000000);
-			a = b;
+			fn2 = (n11 + n22);
+			fn = n1 + n2 + (fn2 / 1000000000);
+			printf(", %ld", fn);
+			printf("%ld", fn2 % 1000000000);
 			n1 = n2;
-			b = f;
-			n2 = (f2 % 1000000000);
+			n11 = n22;
+			n2 = fn;
+			n22 = (fn2 % 1000000000);
 		}
-		if (((a + b) < 0) && i == 1)
-			i = 0;
+		if (((n1 + n2) < 0) && boolean == 1)
+			boolean = 0;
 	}
 	printf("\n");
 	return (0);
