@@ -16,15 +16,13 @@ void times_table(void)
 			m = a * b;
 			if (b != 9)
 			{
-				_putchar(m);
-				_putchar(',');
-				_putchar(' ');
+				printf("%d, ", m);
 			}
 			else
 			{
-				_putchar(m);
+				printf("%d", m);
 			}
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 }
