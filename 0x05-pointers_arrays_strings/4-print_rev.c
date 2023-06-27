@@ -11,7 +11,7 @@ void print_rev(char *s)
 	int i = 0;
 
 	while (i >= 0)
-	(
+	{
 		if (s[i] == '\0')
 		{
 			break;
@@ -24,6 +24,5 @@ void print_rev(char *s)
 		_putchar(s[i]);
 	}
 	_putchar('\n');
-	}
 }
 
