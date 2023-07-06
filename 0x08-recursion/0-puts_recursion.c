@@ -13,7 +13,7 @@ void _puts_recursion(char *s)
 	i = 1;
 	j = 1;
 
-	while (i < s)
+	while (i < '*(s + 1)')
 	{
 		j = j + i;
 		i++;
