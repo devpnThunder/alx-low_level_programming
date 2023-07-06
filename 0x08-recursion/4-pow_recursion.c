@@ -15,6 +15,6 @@ int _pow_recursion(int x, int y)
 	{
 		return (-1);
 	}
-	pwr = x^y;
+	pwr = x ^ y;
 	return (pwr);
 }
