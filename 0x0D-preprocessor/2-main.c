@@ -1,4 +1,12 @@
-#ifndef __FILE__
-#define __FILE__
+#include <stdio.h>
 
-#endif /* __FILE__ */
+/**
+* main - Entry point
+*
+* Return: name of the file
+*/
+int main(void)
+{
+	printf("%s\n", __FILE__);
+	return (0);
+}
