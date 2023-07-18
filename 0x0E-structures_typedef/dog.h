@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
 * struct dog - structure of a dog
@@ -20,7 +21,7 @@ struct dog
 	char *owner;
 };
 
-typedef struct dog dog;
+typedef struct dog dog_m;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif /* DOG_FILE */
