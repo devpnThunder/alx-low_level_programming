@@ -1,8 +1,6 @@
 #ifndef DOG_FILE
 #define DOG_FILE
 
-#include <stdio.h>
-
 /**
 * struct dog - Structure of a dog
 * @name: character variable name
@@ -16,6 +14,6 @@ struct dog
 	char *name;
 	float *age;
 	char *owner;
-}
+};
 
 #endif /* DOG_FILE */
