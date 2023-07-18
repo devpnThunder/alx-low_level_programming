@@ -30,7 +30,7 @@ void print_dog(struct dog *d)
 		else
 		{
 			printf("Name: %s\n", d->name);
-			printf("age: %f", d->name);
+			printf("age: %f", d->age);
 			printf("Owner: %s\n", d->owner);
 		}
 	}
