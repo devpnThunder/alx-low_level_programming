@@ -1,9 +1,9 @@
 #include "dog.h"
 
 /**
- * free_dog - free memory of dog
- * @d: pointer to dog
- */
+* free_dog - free memory of dog
+* @d: pointer to dog
+*/
 
 void free_dog(dog_t *d)
 {
