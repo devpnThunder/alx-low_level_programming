@@ -3,30 +3,30 @@
 #include "variadic_functions.h"
 
 /**
-* print_strings - function that prints strings
-* @separator: string printed between the lines
-* @n: constant integer arguments
+* print_strings - prints strings, followed by a new line.
+* @separator: separator to print between the strings
+* @n: number of strings to print
 *
-* Return: the strings to be printed
+* Return: void
 */
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
-	char *s;
-	va_list args;
+	char *str;
+	va_list valist;
 
-	va_start(args, n);
+	va_start(valist, n);
 	for (i = 0; i < n; i++)
 	{
-		s = va_arg(args, char *);
-		if (s)
-			printf("%s", s);
+		str = va_arg(valist, char *);
+		if (str)
+			printf("%s", str);
 		else
-			printf("(nill)");
+			printf("(nil)");
 		if (i < n - 1 && separator)
 			printf("%s", separator);
 	}
 	printf("\n");
-	va_end(args);
+	va_end(valist);
 }
